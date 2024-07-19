@@ -343,8 +343,8 @@
 
 - type: listing
   id: UplinkMedicineProp5
-  name: Автоинъектор от ожогов и физ. повреждений
-  description: Помогает от физических повреждений.
+  name: Автоинъектор от ожогов
+  description: Помогает от ожоговых повреждений.
   productEntity: BurnAutoInjector
   cost:
     Telecrystal: 15
@@ -364,7 +364,7 @@
 - type: listing
   id: UplinkMedicineProp7
   name: Регенеративная сеть
-  description: Против физ. повреждений.
+  description: Против ожогов.
   productEntity: RegenerativeMesh
   cost:
     Telecrystal: 20
@@ -384,7 +384,7 @@
 - type: listing
   id: UplinkMedicineProp9
   name: Мазь
-  description: Против физических.
+  description: Против ожогов.
   productEntity: Ointment
   cost:
     Telecrystal: 6
