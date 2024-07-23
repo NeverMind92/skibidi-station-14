@@ -23,8 +23,7 @@ public sealed class RotationVisualizerSystem : SharedRotationVisualsSystem
         if (args.Sprite == null)
             return;
 
-        if (!_appearance.TryGetData<RotationState>(uid, RotationVisuals.RotationState, out var state, args.Component))
-            return;
+        _appearance.TryGetData<RotationState>(uid, RotationVisuals.RotationState, out var state, args.Component);
 
         switch (state)
         {
