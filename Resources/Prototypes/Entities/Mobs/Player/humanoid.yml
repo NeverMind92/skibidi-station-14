@@ -893,3 +893,149 @@
   - type: RandomSpawner
     prototypes:
     - RandomHumanoidSpawnerAryan
+
+
+- type: entity
+  id: RandomHumanoidSpawnerHSamuray
+  parent: RandomHumanoidSpawnerERTLeader
+  name: Гипер Самурай
+  suffix: skibidistation
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: passenger
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstHSamuray
+      - NamesLastHSamuray
+    - type: RandomHumanoidSpawner
+      settings: HSamuray
+
+- type: randomHumanoidSettings
+  id: HSamuray
+  parent: EventHumanoidMindShielded
+  randomizeName: false
+  speciesBlacklist: ['Diona', 'Moth', 'Reptilian', 'Arachnid', 'Vulpkanin'] # skibidistation HRP
+  components:
+    - type: GhostRole
+      name: Гипер Самурай
+      description: основатель Гипер Компани. Ебать быстрый.
+      rules: ебашь кого хош
+    - type: Loadout
+      prototypes: [ HSamurayGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstHSamuray
+        - NamesLastHSamuray
+
+- type: entity
+  name: HSamuraySpawner
+  id: HSamuraySpawner
+  parent: MarkerBase
+  suffix: skibidistation
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Markers/jobs.rsi
+        state: passenger
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidSpawnerHSamuray
+
+
+- type: entity
+  id: RandomHumanoidSpawnerSVO
+  parent: RandomHumanoidSpawnerERTLeader
+  name: Ариец
+  suffix: skibidistation
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: passenger
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstSVO
+      - NamesLastSVO
+    - type: RandomHumanoidSpawner
+      settings: SVO
+
+- type: randomHumanoidSettings
+  id: SVO
+  parent: EventHumanoidMindShielded
+  randomizeName: false
+  speciesBlacklist: ['Diona', 'Moth', 'Reptilian', 'Arachnid', 'Vulpkanin'] # skibidistation HRP
+  components:
+    - type: GhostRole
+      name: боец вагнера
+      description: ебашь по толчкам во славу Пригожина
+      rules: по своим не хуярь
+    - type: Loadout
+      prototypes: [ SVOGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstSVO
+        - NamesLastSVO
+
+- type: entity
+  name: SVOSpawner
+  id: SVOSpawner
+  parent: MarkerBase
+  suffix: skibidistation
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Markers/jobs.rsi
+        state: passenger
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidSpawnerSVO
+
+- type: entity
+  id: RandomHumanoidSpawnerPakistan
+  parent: RandomHumanoidSpawnerERTLeader
+  name: Пакистанец
+  suffix: skibidistation
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: passenger
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstPakistan
+      - NamesLastPakistan
+    - type: RandomHumanoidSpawner
+      settings: Pakistan
+
+- type: randomHumanoidSettings
+  id: Pakistan
+  parent: EventHumanoidMindShielded
+  randomizeName: false
+  speciesBlacklist: ['Diona', 'Moth', 'Reptilian', 'Arachnid', 'Vulpkanin'] # skibidistation HRP
+  components:
+    - type: GhostRole
+      name: Пакистанец
+      description: Ебашь во славу аллаха
+      rules: по собратьям мусульманским не хуярить
+    - type: Loadout
+      prototypes: [ PakistanGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstPakistan
+        - NamesLastPakistan
+
+- type: entity
+  name: PakistanSpawner
+  id: PakistanSpawner
+  parent: MarkerBase
+  suffix: skibidistation
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Markers/jobs.rsi
+        state: passenger
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidSpawnerPakistan

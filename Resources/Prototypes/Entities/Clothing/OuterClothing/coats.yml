@@ -466,3 +466,25 @@
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterHyperDogi
+  name: Гипер доги самурая
+  description: одежда основателя Гипер компани.
+  suffix: skibidistation
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/hyper_dogi.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/hyper_dogi.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.4
+        Piercing: 0.4
+        Heat: 0.2
+  - type: ClothingSpeedModifier
+    walkModifier: 1.50
+    sprintModifier: 1.50

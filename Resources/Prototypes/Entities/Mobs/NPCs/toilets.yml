@@ -3,7 +3,7 @@
   id: MobSkibidiToilet
   parent: SimpleSpaceMobBase
   description: Brrr skibidi dop dop
-  suffix: skibidistation
+  suffix: skibidistation, DO NOT SPAWN
   components:
   - type: Insulated
   - type: CombatMode
@@ -1667,4 +1667,84 @@
   - type: RandomSpawner
     prototypes:
       - WeaponTurretSkibidiToilet
+    chance: 1
+
+- type: entity
+  name: Скибиди Жид
+  parent: MobSkibidiToilet
+  id: MobSkibidiToiletJew
+  description: сжигай его нахуй
+  suffix: skibidistation, weak
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Toilets/toilet_jew.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: toilet
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: SlowOnDamage
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 5
+  - type: BasicEntityAmmoProvider
+    proto: BulletPistol
+    capacity: 5
+    count: 5
+  - type: Gun
+    fireRate: 1
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot: /Audio/Toilets/skibidi_dop.ogg
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 450
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 270
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              path: /Audio/Toilets/death.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Telecrystal:
+                min: 30
+                max: 30
+
+- type: entity
+  id: SkibidiJewSpawner
+  name: SkibidiJewSpawner
+  suffix: skibidistation
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Mobs/Toilets/toilet_jew.rsi
+        state: toilet
+  - type: RandomSpawner
+    prototypes:
+      - MobSkibidiToiletJew
     chance: 1

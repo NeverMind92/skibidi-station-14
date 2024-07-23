@@ -363,3 +363,45 @@
   storage:
     back:
     - BoxSurvival
+
+- type: startingGear
+  id: HSamurayGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNinja
+    shoes: ClothingShoesSpaceNinja
+    head: ClothingHeadHatCasa
+    gloves: ClothingHandsGlovesKrav-Maga
+    belt: ClothingBeltSheathHKFilled
+    neck: ClothingNeckCloakRMR
+    eyes: ClothingEyesHudOmni
+    mask: ClothingMaskBreathMedicalSecurity
+    outerClothing: ClothingOuterHyperDogi
+
+- type: startingGear
+  id: SVOGear
+  equipment:
+    jumpsuit: SVOuniform
+    shoes: ClothingShoesBootsCombatFilled
+    head: ClothingHeadHelmetSvo
+    gloves: ClothingHandsGlovesMercFingerless
+    belt: ClothingBeltAssault
+    eyes: ClothingEyesHudSyndicateAgent
+    mask: ClothingMaskNeckGaiter
+    outerClothing: SvoArmor
+    back: WeaponLauncherRocket
+    suitstorage: lr300
+    pocket1: ToolDebug
+    pocket2: RadioHandheldSecurity
+
+- type: startingGear
+  id: PakistanGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAncient
+    shoes: ClothingShoesBootsSalvage
+    head: ClothingHeadHatHoodKufia
+    gloves: ClothingHandsGlovesFingerless
+    belt: ClothingBeltPackistanWebbingFilled
+    outerClothing: KamizUniform
+    back: akpalestina
+    pocket1: RadioHandheld
+    pocket2: MagazineRifleAk

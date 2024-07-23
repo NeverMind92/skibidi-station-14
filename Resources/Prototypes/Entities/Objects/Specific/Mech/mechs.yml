@@ -324,3 +324,27 @@
     damage:
       types:
         Blunt: 25
+
+- type: entity
+  id: MechTankBattery
+  parent: MechTank
+  suffix: Battery, skibidistation
+  components:
+  - type: ContainerFill
+    containers:
+      mech-battery-slot:
+      - PowerCellHigh
+
+- type: entity
+  name: MechTank Spawner
+  id: SpawnMechTank
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Specific/Mech/mecha.rsi
+        state: tank
+  - type: ConditionalSpawner
+    prototypes:
+      - MechTankBattery

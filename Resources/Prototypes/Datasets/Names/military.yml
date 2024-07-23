@@ -118,7 +118,7 @@
   - Влагалище
   - Инн
   - ДайтеЕмуСтул
-  - СетстраБеттера
+  - СестраБеттера
   - Пешка
   - Халяль
   - Харам
@@ -135,3 +135,60 @@
   - Еблан
   - Намаз
   - Техас
+
+- type: dataset
+  id: NamesFirstHSamuray
+  values:
+  - Гипер Самурай
+
+- type: dataset
+  id: NamesLastHSamuray
+  values:
+  - I
+  - II
+  - III
+  - IV
+  - V
+
+- type: dataset
+  id: NamesFirstSVO
+  values:
+  - Евгений
+  - Вирмир
+  - Ухбоер
+  - Хитробанчик
+  - Тимурка
+  - Сас
+  - Беттер
+  - Закурчик
+
+- type: dataset
+  id: NamesLastSVO
+  values:
+  - Пригожин
+  - Хохлорезов
+  - ЕбательЧурок
+  - ВырезательЖидов
+
+- type: dataset
+  id: NamesFirstPakistan
+  values:
+  - Усама
+  - Хасан
+  - Мухамед
+  - Абдул
+  - Исмаил
+  - Хассан
+
+- type: dataset
+  id: NamesLastPakistan
+  values:
+  - Бен Ладен
+  - Хамас
+  - Аль-Банна
+  - Бади
+  - Риад аль-Шаяфех
+  - Гани Барадар
+  - Омар
+  - Хания
+  - Насралл

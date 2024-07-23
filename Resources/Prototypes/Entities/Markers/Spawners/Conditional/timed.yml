@@ -101,7 +101,8 @@
       - MobSkibidiToiletRunner
       - MobSkibidiToiletSpider
       - MobSkibidiToiletShitSec
-      chance: 0.65
+      - MobSkibidiToiletJew
+      chance: 0.70
       intervalSeconds: 150
       minimumEntitiesSpawned: 3
       maximumEntitiesSpawned: 8
@@ -155,7 +156,7 @@
       - MobSkibidiToiletPakistan
       - MobSkibidiToiletVirmr
       chance: 0.25
-      intervalSeconds: 750
+      intervalSeconds: 650
       minimumEntitiesSpawned: 2
       maximumEntitiesSpawned: 3
 
