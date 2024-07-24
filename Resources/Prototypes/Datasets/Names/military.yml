@@ -102,6 +102,8 @@
   - Укроеб
   - Тоха
   - Тимурка
+  - Форекс
+  - Форекс(НеЧсв)
 
 - type: dataset
   id: NamesLastAryan
@@ -135,6 +137,7 @@
   - Еблан
   - Намаз
   - Техас
+  - Форексосо
 
 - type: dataset
   id: NamesFirstHSamuray
